@@ -8,6 +8,6 @@ int main(){
       cout<<"Even";
     else
       cout<<"Odd";
-      
+    return 0;
 
 }
