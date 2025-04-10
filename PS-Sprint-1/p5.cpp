@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
   int l, first=0,second=1, third;
-  cout<<"Enter the limit uo to which Fibonacci numbers should be generated:";
+  cout<<"Enter the limit up to which Fibonacci numbers should be generated:";
   cin>>l;
   cout<<first<<endl;
   if(second<=l)
