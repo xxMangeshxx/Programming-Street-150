@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
   int x,n,m;
-  cout<<"Enter the nunber to find if it's an Amstrong number:";
+  cout<<"Enter the number to find if it's an Amstrong number:";
   cin>>x;
   n=x;
   m=x;
