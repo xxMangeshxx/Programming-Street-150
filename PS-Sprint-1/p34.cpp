@@ -5,9 +5,9 @@ using namespace std;
 int main(){
   string str1,str2;
   std::cout<<"Anagram checker \n";
-  std::cout<<"Enter string 1";
+  std::cout<<"Enter string 1:";
   getline(cin,str1);
-  std::cout<<"Enter string 2";
+  std::cout<<"Enter string 2:";
   getline(cin,str2);
   sort(str1.begin(),str1.end());
   sort(str2.begin(),str2.end());
@@ -19,7 +19,7 @@ bool b=true;
     }
   }
   if(b){
-  cout<<"They are anagrams":
+  cout<<"They are anagrams";
     }
   else{
     cout<<"They are not anagrams";
