@@ -7,6 +7,7 @@ Input: array = [10, 20, 4, 45, 99]
 Output: 45
 Explanation: The second largest number in the array is 45. */
 #include <iostream>
+#include <limits>
 using namespace std;
 int main(){
   int n;
@@ -17,17 +18,21 @@ int main(){
   for(int i=0;i<n;i++){
     cin>>arr[i];
   }
-  int largest,secondlargest;
-  largest, secondlargest=0;
+  float largest,secondlargest;
+  largest=secondlargest=-numeric_limits<float>::infinity();
   for(int i=0;i<n;i++){
+    
     if(arr[i]>largest){
       largest=arr[i];
     }
+    
+  }
+  for(int i=0;i<n;i++){
     if(arr[i]<largest && arr[i]>secondlargest){
       secondlargest=arr[i];
     }
-  }
-  cout<<"Largest is: "<<largest<<"and second largest is: "<<secondlargest;
+}
+  cout<<"Largest is: "<<largest<<" and second largest is: "<<secondlargest;
   return 0;
 }
   
